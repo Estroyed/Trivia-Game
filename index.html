@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--Those are imports and defentions you should not edit  -->
+
+  <!--  Meta  -->
+  <meta charset="UTF-8" />
+  <title>Liran Denis & Bar Israeli Trivia Game</title>
+  <!-- You can enter the application title here -->
+
+  <!--  Styles  -->
+  <link rel="stylesheet" href="style.css" />
+  <!--the reference to your Css should be inserted here -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/f24533ba21.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
+
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+    integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous" />
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+    integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+    integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+    integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous">
+  </script>
+
+  <!-- Jquery you should not edit -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <!-- JavaScript -->
+  <script type="text/javascript" src="script.Js"></script>
+  <!--the reference to your JavaScript code should be inserted here under src -->
+</head>
+
+<body>
+  <!-- The application HTML should appear here. -->
+
+  <div class="jumbotron text-center">
+    <h1>Liran Denis & Bar Israeli Trivia Game</h1>
+  </div>
+  <div class="card-block w-100 text-center" id="mainSelect">
+    <div class="form-group">
+      <label for="categories" class="text-muted"> select category :</label>
+      <select class="form-control-lg w-100 custom-select" name="categories" id="categories">
+        <option value="" selected disabled hidden>Please select</option>
+        <option value="any">Any Category</option>
+      </select>
+
+      <label for="difficulty" class="text-muted"> select difficulty :</label>
+      <select class="form-control-lg w-100 custom-select" name="difficulty" id="difficulty">
+        <option value="" selected disabled hidden>Please select</option>
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+      </select>
+
+      <label for="type" class="text-muted"> select question type :</label>
+      <select class="form-control-lg w-100 custom-select" name="type" id="type">
+        <option value="" selected disabled hidden>Please select</option>
+        <option value="boolean">True/False</option>
+        <option value="multiple">Multiple Choise</option>
+      </select>
+
+      <label for="number" class="text-muted"> Select question amount :</label>
+      <input type="number" name="trivia_amount" id="trivia_amount" class="form-control" min="1" max="300" value="1" />
+    </div>
+    <button id="Start" class="btn btn-primary">Start Game</button>
+  </div>
+
+  <div class="text-center">
+    <div id="container" class="container">
+      <div id="question-container">
+        <div id="question"></div>
+        <div id="answer-buttons" class="btn-grid"></div>
+        <div id="score">Score: 0</div>
+        <div class="mistakes" id="mistakes">
+          Life: &#10084; &#10084; &#10084;
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+*,
+*::before *::after {
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container {
+    width: 800px;
+    max-width: 80%;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgb(123, 178, 180);
+    box-shadow: 0 0 10px 2px blue;
+    opacity: 0;
+    align-items: center;
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px 0;
+
+}
+
+body {
+    align-self: center;
+}
+
+button {
+    background-color: lightblue;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px 10px;
+    outline: none;
+}
+
+button:hover {
+    border-color: black;
+}
+
+div {
+
+
+    font-weight: bold;
+    font-size: 1.5rem;
+    font-family: Gotham Rounded;
+}
+
+.container .mistakes {
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    background-color: grey;
+    border-radius: 50%;
+    margin: 3px;
+    font-size: larger;
+
+}
+
+#score {
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    float: right;
+    font-size: larger;
+}
